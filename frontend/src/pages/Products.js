@@ -170,7 +170,7 @@ function ProductModal({ product, onClose, onSaved }) {
       <div className="modal">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
           <div className="modal-title" style={{ margin: 0 }}>{product ? 'Edit Product' : 'Add Product'}</div>
-          <button className="btn btn-ghost btn-sm" onClick={onClose}><X size={14} /></button>
+          <button className="btn btn-ghost btn-sm" onClick={onClose}><XIcon size={14} /></button>
         </div>
 
         {profit > 0 && (
