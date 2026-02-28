@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [loading] = useState(false);
 
   const login = async (email, password) => {
-    const { data } = await api.post('/auth/login', { email, password });
+    const { data } = await api.post("https://your-backend.railway.app/api/login", { email, password });
     localStorage.setItem('pos_token', data.token);
     localStorage.setItem('pos_user', JSON.stringify(data.user));
     setUser(data.user);
